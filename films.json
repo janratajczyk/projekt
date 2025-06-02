@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Abrakadabra",
+    "artist": "Sentasz",
+    "ratings": [
+      { "userId": "683831be16e0649a607813a7", "value": 4 },
+      { "userId": "683831be16e0649a607813a8", "value": 5 },
+      { "userId": "683831be16e0649a607813a9", "value": 3 },
+      { "userId": "683831be16e0649a607813aa", "value": 4 },
+      { "userId": "683831be16e0649a607813ab", "value": 2 },
+      { "userId": "683831be16e0649a607813ad", "value": 4 },
+      { "userId": "683831be16e0649a607813ae", "value": 5 },
+      { "userId": "683831be16e0649a607813b1", "value": 3 },
+      { "userId": "683831be16e0649a607813b3", "value": 4 },
+      { "userId": "683831be16e0649a607813b5", "value": 4 },
+      { "userId": "683831be16e0649a607813b7", "value": 2 },
+      { "userId": "683831be16e0649a607813b9", "value": 3 }
+    ],
+    "averageRating": 3.42
+  }
+]

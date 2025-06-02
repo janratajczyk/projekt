@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f9fafb;
+}
+
+.hamburger-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.welcome-header {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px 4px rgba(66, 44, 15, 0.4);
+  user-select: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.add-film-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-film-form h3 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: rgba(57, 41, 7, 0.91);
+  text-align: center;
+}
+
+.add-film-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.add-film-form button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(57, 41, 7, 0.91);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-film-form button:hover {
+  background-color: rgba(57, 41, 7, 0.91);
+}
+
