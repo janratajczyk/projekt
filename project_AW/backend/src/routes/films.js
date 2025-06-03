@@ -12,17 +12,20 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    const { title, artist } = req.body;
-    if (!title || !artist) {
-        return res.status(400).json({ error: 'Tytuł i wykonawca są wymagane' });
+    const { title, artist, category, schauspiller } = req.body;
+    if (!title || !artist || !category) {
+        return res.status(400).json({ error: 'Tytuł, reżyser i kategoria są wymagane' });
     }
     try {
         const newFilm = new Film({
             title,
             artist,
+            schauspiller,
+            category,
             ratings: [],
             averageRating: 0,
         });
+
         await newFilm.save();
         res.status(201).json(newFilm);
     } catch (err) {
@@ -40,7 +43,7 @@ router.post('/:id/rate', async (req, res) => {
 
     try {
         const film = await Film.findById(filmId);
-        if (!film) return res.status(404).json({ error: 'Piosenka nie znaleziona' });
+        if (!film) return res.status(404).json({ error: 'Film nie znaleziony' });
 
         const existingRating = film.ratings.find(r => r.userId.toString() === userId);
         if (existingRating) {
@@ -63,7 +66,7 @@ router.delete('/:id', async (req, res) => {
     try {
         const filmId = req.params.id;
         await Film.findByIdAndDelete(filmId);
-        res.json({ message: 'Piosenka usunięta' });
+        res.json({ message: 'Film usunięty' });
     } catch (err) {
         res.status(500).json({ error: 'Błąd serwera' });
     }

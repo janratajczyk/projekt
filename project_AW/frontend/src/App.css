@@ -31,7 +31,7 @@ body {
   margin-bottom: 20px;
 }
 .add-film-form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: #ffffff;
@@ -59,12 +59,12 @@ body {
 
 .add-film-form button {
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   background-color: rgba(57, 41, 7, 0.91);
   color: white;
-  font-weight: 600;
+  font-weight: 650;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease;

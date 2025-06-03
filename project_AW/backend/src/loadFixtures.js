@@ -33,6 +33,8 @@ async function loadFixtures() {
             const film = new Film({
                 title: filmData.title,
                 artist: filmData.artist,
+                schauspiller: filmData.schauspiller,
+                category: filmData.category,
                 ratings: filmData.ratings.map(r => ({
                     userId: new mongoose.Types.ObjectId(r.userId),
                     value: r.value,

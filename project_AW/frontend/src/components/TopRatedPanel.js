@@ -16,7 +16,7 @@ const TopRatedPanel = ({ isOpen, onClose, onSelectFilm }) => {
     return (
         <div className={`top-rated-panel ${isOpen ? 'open' : ''}`}>
             <div className="panel-header">
-                <h3>Ranking utworów</h3>
+                <h3>Ranking filmów</h3>
                 <button onClick={onClose}>×</button>
             </div>
             <ul>

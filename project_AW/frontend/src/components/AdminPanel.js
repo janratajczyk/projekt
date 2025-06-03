@@ -31,7 +31,7 @@ const AdminPanel = ({ onBack, showToast }) => {
                 ))}
             </ul>
 
-            <h3>Piosenki</h3>
+            <h3>Filmy</h3>
             <ul>
                 {films.map(film => (
                     <li key={film._id}>

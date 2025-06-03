@@ -67,6 +67,10 @@ const FilmDetails = ({ film: initialFilm, onBack, showToast, user, onUpdateFilm 
             <p>
                 <b>Wykonawca:</b> {film.artist}
             </p>
+            <p><strong>Kategoria:</strong> {film.category}</p>
+
+            <p><strong>Główny aktor:</strong> {film.schauspiller}</p>
+
             <p>
                 <b>Średnia ocena:</b> {film.averageRating?.toFixed(2) || 'Brak'} ⭐
             </p>

@@ -5,5 +5,20 @@
     "password": "123",
     "role": "admin",
     "noHash": true
+  },
+  {
+    "_id": "683831be16e0649a607813a6",
+    "username": "admin",
+    "password": "123"
+  },
+  {
+    "_id": "683831be16e0649a607813a5",
+    "username": "Jan",
+    "password": "111"
+  },
+  {
+    "_id": "683831be16e0649a607813a4",
+    "username": "BARTOSZ",
+    "password": "997"
   }
 ]
